@@ -13,10 +13,6 @@
             padding:0;
         }
 
-.cover {
-width: 100%;
-}
-
 #login {
     border:none;
     background-color:rgba(37, 108, 251, 0.88);
@@ -36,22 +32,43 @@ width: 100%;
 }
 
 
+.imagediv {
+background-image:url(../images/macaw.jpg);
+background-size: cover;
+height: 400px;
+background-position: 70% 0%;
+}
+
+@media(min-width:100px){
+    .imagediv {
+height:200px;
+    }
+}
+
+@media(min-width:600px) {
+
+.imagediv {
+height:300px
+}
+}
+
+@media(min-width:900px){
+    .imagediv {
+        height: 400px;
+        background-position: 70% 0%;
+    }
+}
+
+
 
     </style>
 
 </head>
 <body>
 
-    <div class="buttondiv">
-    
-<button id="login">login</button>
+    <div class="buttondiv"> <button id="login">login</button></div>
 
-    </div>
-
-    <div>
-    <img class="cover" src="../images/macaw.jpg" alt="header">
-
-</div>
+    <div class="imagediv"></div>
 
 <script>
 </script>
